@@ -17,8 +17,7 @@ RUN yes|${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager --licenses
 
 RUN ${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager "cmdline-tools;latest"
 RUN ${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager "build-tools;30.0.2"
-RUN ${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager "platform-tools"
 RUN ${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager "platforms;android-29"
-RUN ${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager "system-images;android-29;google_apis;x86_64"
+RUN ${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager "extras;android;m2repository"
 
 RUN yes|${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin/sdkmanager --licenses
